@@ -5,8 +5,8 @@
 
 body {
     background-color: #121826;
-    font-family: "Jost";
-    background-image: url(/);
+    font-family: "Jost", serif;
+    background-image: url(/simple-feature-section-master/resources/Background_image.svg);
 }
 
 .title {
@@ -15,6 +15,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 230px;
+}
+
+h1::before,
+h1::after {
+    display: block;
+    content: '';
+    background-color: white;
+    font-size: 20px;
+    width: 80%;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 100px;
 }
 
 h1 {
@@ -31,12 +43,14 @@ span {
 
 .containersDiv {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .squareInfo {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-left: 23px;
+    margin-right: 23px;
     padding-top: 25px;
     padding-left: 22px;
     display: flex;
@@ -48,12 +62,12 @@ span {
     height: 450px;
 }
 
-.emogi {
+.emoji {
     background-color: bisque;
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 20px;
-    
+
 }
 
 .text {
