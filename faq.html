@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/faq.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -13,21 +16,56 @@
 
    <header class="header">
      <nav class="nav">
-        <ul>
+        <ul class="ul_nav">
             <li><a href="index.html">Home</a></li>
-            <li><a>Products</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="#">Productos</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Producto 1</a></li>
+                  <li><a href="#">Producto 2</a></li>
+                  <li><a href="#">Producto 3</a></li>
+                </ul>
+              </li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
         </ul>
      </nav>
    </header>
-
-    <section class="section">
+    
+    <section class="questions">
         <div class="content">
             <h1>Frequently Asked Questions</h1>
-            <span></span>
+            <span>Browse through the most frequently asked questions</span>    
+        </div>
+       
+        <div class="question_container">
+        <article class="questions_question">      
+           <h2 class="question_title">How can I track my order?</h2>
+           <span class="question_phrase">You can track your order using the following steps</span>
+           <p class="question_content">
+                1. Go to the Order <a class="question_link">Tracking page.</a><br>
+                2. Enter your order number and email address.<br>
+                3. Click on the Track Order button to view the current status of your shipment.
+            </p>
+            <span class="question_phrase2">If you encounter any issues, please visit our <a class="question_link">Help Center.</a></span>
+        </article>
+
+        <hr>
+
+        <article class="questions_question">
+            <h2 class="question_title">What is your return policy?</h2>
+            <span class="question_phrase">We offer a 30-day return policy on most items. Here are some key points</span>
+            <ul class="question_list">
+                <li><b>Items must be in original condition:</b> Unworn, unused, and unwashed.<br></li>
+                <li><b>Include original packaging and tags:</b> All items should be returned with their original packaging and tags.<br></li>
+                <li><b>Proof of purchase:</b> A receipt or proof of purchase is required.<br></li>
+            </ul>
+            <span class="question_phrase2">For more detailed information, read our full <a class="question_link">Return Policy.</a></span>
+        </article>
         </div>
     </section>
 
-
+    <footer>
+        <p><b>Front End Design</b></p>
+    </footer>
 </body>
 </html>
